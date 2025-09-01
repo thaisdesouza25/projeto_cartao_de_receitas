@@ -1,0 +1,42 @@
+/*1.RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*BOX-SIZING é uma propriedade para não deixar os elementos sairem da caixa*/
+}
+
+/*2.ESTILOS GERAIS PARA A PÁGINA*/
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* alinhando os itens ao centro */
+    min-width: 100vh; /* suporta a autira minima da pagina em até 100vh */
+    margin: 0;
+}
+/* 2. ESTILO DO CARTÃO DE RECEITA */
+.recipe-card{
+    width: 350px; /* largura para o nosso card */
+    background-color: #ffffff;
+    border-radius: 15px; /* cantos da pagina mais aredondados em 15px */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* colocar a sombra mais sútil */
+    overflow: hidden; /* esta proriedade "corta" qualquer conteudo filho(imagem) que tente vazar para fora do nosso card*/
+}
+.recipe-image{
+    width: 100%; /* faz com que a imagem seja responsiva com o card */
+    display: block; /*  garante que o navegador renderize a imagem como um bloco, removendo pequenos espaços que podem aparecerdebaixo dela afastando as bordas do card */
+}
+.recipe-title{
+    font: size 1.5em; /* 24px */
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.recipe-description{
+    font-size: 1rem; /* 16px */
+    line-height: 1.5; /* espaçamento entre as linhas do paragráfos */
+    color: #666;
+    margin-bottom: 0; /* remove a margem do último elemento */
+}
